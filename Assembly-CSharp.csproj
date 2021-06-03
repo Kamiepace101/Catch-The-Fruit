@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\ScoreKeeper.cs" />
      <Compile Include="Assets\Scripts\Apple.cs" />
      <Compile Include="Assets\Scripts\GrandmaController.cs" />
      <Compile Include="Assets\Scripts\Main Menu.cs" />
