@@ -17,7 +17,10 @@ public class Apple : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.transform.tag =="Apple"){
+        ScoreKeeper scoreKeeper = GameObject.FindObjectOfType<ScoreKeeper>();
+        if(other.transform.tag =="Apple")
+        {
+            scoreKeeper.IncrementScore();
             Destroy(other.gameObject);
         }
         transform.Translate(Vector3.down * _speed * Time.deltaTime);
@@ -26,15 +29,5 @@ public class Apple : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
-    }
-    
-    private void FallingApples()
-    {
-        ScoreKeeper scoreKeeper = GameObject.FindObjectOfType<ScoreKeeper>();
-        if(scoreKeeper != null)
-        {
-            scoreKeeper.IncrementScore();
-        }
-        Destroy(gameObject);
     }
 }
