@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8267602234666479321}
   - component: {fileID: 8267602234666479320}
   - component: {fileID: 8267602234666479323}
-  - component: {fileID: 8267602234666479318}
   - component: {fileID: -7547523512552829507}
+  - component: {fileID: -8268547508545671005}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Apple
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9c23882b44b967143891439b99aac22f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -110,18 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.516771, y: 10.727372}
   m_EdgeRadius: 1
---- !u!114 &8267602234666479318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8267602234666479322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4411b7f37d870c4c95bf7d07c468018, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &-7547523512552829507
 Rigidbody2D:
   serializedVersion: 4
@@ -143,3 +131,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8268547508545671005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267602234666479322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4411b7f37d870c4c95bf7d07c468018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

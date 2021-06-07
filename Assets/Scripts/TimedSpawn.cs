@@ -5,7 +5,7 @@ using UnityEngine;
 public class TimedSpawn : MonoBehaviour
 {
     public GameObject Spawner;
-    public bool _stopSpawning = false;
+    public bool _stopSpawning = true;
     public float spawnTime;
     public float spawnDelay;
     [SerializeField]

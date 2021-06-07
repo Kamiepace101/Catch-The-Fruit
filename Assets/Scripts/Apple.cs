@@ -7,7 +7,8 @@ public class Apple : MonoBehaviour
     private float _speed = 3f;
     
     // Strat is called before the first frame update
-    void Start() {
+    void Start() 
+    {
         
     }
     private void Update() 
@@ -18,14 +19,15 @@ public class Apple : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         ScoreKeeper scoreKeeper = GameObject.FindObjectOfType<ScoreKeeper>();
-        if(other.transform.tag =="Apple")
+        if (other.transform.tag == "Apple")
         {
             scoreKeeper.IncrementScore();
             Destroy(other.gameObject);
         }
-        transform.Translate(Vector3.down * _speed * Time.deltaTime);
-
-        if(transform.position.y < -6.67f)
+        else
+        {
+        }
+        if (transform.position.y < -6.67f)
         {
             Destroy(other.gameObject);
         }

@@ -36,11 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\ScoreKeeper.cs" />
      <Compile Include="Assets\Scripts\Apple.cs" />
+     <Compile Include="Assets\Scripts\Bad Apple.cs" />
+     <Compile Include="Assets\Scripts\Badapple.cs" />
+     <Compile Include="Assets\Scripts\Ending.cs" />
      <Compile Include="Assets\Scripts\GrandmaController.cs" />
+     <Compile Include="Assets\Scripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\Main Menu.cs" />
      <Compile Include="Assets\Scripts\Mainmenu.cs" />
+     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
      <Compile Include="Assets\Scripts\TimedSpawn.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Reference Include="UnityEngine">
